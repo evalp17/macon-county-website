@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Departments | Macon County, NC</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header>
+    <div class="branding">
+      <img src="images/mock-macon-county-north-carolina.png" alt="Macon County Logo" class="logo" />
+  
+      <div class="site-title">
+        <h1>Macon County, NC</h1>
+        <p>Established 1828</p>
+      </div>
+  
+      <form class="search-form" action="#" method="get">
+        <input type="text" name="q" placeholder="Search..." aria-label="Search" />
+        <button type="submit" aria-label="Search">&#128269;</button>
+      </form>
+    </div>
+  
+    <nav>
+      <button class="nav-toggle">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="departments.html">Departments</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="news.html">News & Events</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>County Departments</h2>
+    </section>
+    <section class="content">
+      <table>
+        <thead>
+          <tr>
+            <th>Department</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Public Safety</td>
+            <td>Includes emergency services, sheriff’s office, and fire services.</td>
+          </tr>
+          <tr>
+            <td>Health & Human Services</td>
+            <td>Provides support for public health, wellness, and family assistance.</td>
+          </tr>
+          <tr>
+            <td>Parks & Recreation</td>
+            <td>Manages recreational programs and public spaces for residents.</td>
+          </tr>
+          <tr>
+            <td>Public Works</td>
+            <td>Maintains roads, water systems, and public infrastructure.</td>
+          </tr>
+          <tr>
+            <td>Education & Libraries</td>
+            <td>Coordinates with schools and maintains public library access.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Macon County, NC. All Rights Reserved. | Designed by EvaDesign</p>
+    <img src="images/evadesign-logo.png" alt="EvaDesign Logo" class="footer-logo" />
+  </footer>
+  <script>
+    document.querySelector('.nav-toggle').addEventListener('click', () => {
+      document.querySelector('.nav-links').classList.toggle('open');
+    });
+  </script>
+</body>
+</html>

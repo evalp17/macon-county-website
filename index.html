@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Welcome to the redesigned website of Macon County, NC"/>
+  <link rel="stylesheet" href="css/styles.css" />
+  <title>Macon County, NC</title>
+</head>
+<body>
+    <header>
+        <div class="branding">
+            <img src="images/mock-macon-county-north-carolina.png" alt="Macon County Logo" class="logo" />
+      
+          <div class="site-title">
+            <h1>Macon County, NC</h1>
+            <p>Established 1828</p>
+          </div>
+      
+          <form class="search-form" action="#" method="get">
+            <input type="text" name="q" placeholder="Search..." aria-label="Search" />
+            <button type="submit" aria-label="Search">&#128269;</button>
+          </form>
+        </div>
+      
+        <nav>
+          <button class="nav-toggle">&#9776;</button>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="departments.html">Departments</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="news.html">News & Events</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      
+          
+
+      <main class="main-section">
+        <section class="intro-content">
+          <div class="hero">
+            <h2>Welcome to Macon County</h2>
+            <p>Serving our community with accessible, modern services</p>
+          </div>
+      
+          <section class="highlights">
+            <article>
+              <h3>Latest News</h3>
+              <p>Stay up-to-date with community events and news.</p>
+            </article>
+            <article>
+              <h3>Public Services</h3>
+              <p>Access permits, applications, and county forms online.</p>
+            </article>
+            <article>
+              <h3>Departments</h3>
+              <p>Find information on Health, Public Safety, and more.</p>
+            </article>
+          </section>
+        </section>
+      
+        <section class="carousel">
+          <div class="carousel-container">
+            <img src="images/neighbourhood.jpeg" alt="Neighborhood" class="carousel-slide active" />
+            <img src="images/volunteer.jpeg" alt="Volunteers" class="carousel-slide" />
+            <img src="images/waterfall.jpeg" alt="Waterfall" class="carousel-slide" />
+          </div>
+        </section>
+      </main>
+      
+
+  <footer>
+    <p>&copy; 2025 Macon County, NC. All Rights Reserved. | Designed by EvaDesign</p>
+    <img src="images/evadesign-logo.png" alt="EvaDesign Logo" class="footer-logo" />
+  </footer>
+  
+
+  <script>
+    document.querySelector('.nav-toggle').addEventListener('click', () => {
+      document.querySelector('.nav-links').classList.toggle('open');
+    });
+  </script>
+  <script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.carousel-slide');
+  
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.classList.toggle('active', i === index);
+      });
+    }
+  
+    function nextSlide() {
+      currentSlide = (currentSlide + 1) % slides.length;
+      showSlide(currentSlide);
+    }
+  
+    setInterval(nextSlide, 4000); // 4 seconds
+  </script>
+  
+</body>
+</html>

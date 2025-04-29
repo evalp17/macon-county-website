@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Resources | Macon County, NC</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+    <header>
+        <div class="branding">
+            <img src="images/mock-macon-county-north-carolina.png" alt="Macon County Logo" class="logo" />
+      
+          <div class="site-title">
+            <h1>Macon County, NC</h1>
+            <p>Established 1828</p>
+          </div>
+      
+          <form class="search-form" action="#" method="get">
+            <input type="text" name="q" placeholder="Search..." aria-label="Search" />
+            <button type="submit" aria-label="Search">&#128269;</button>
+          </form>
+        </div>
+      
+        <nav>
+          <button class="nav-toggle">&#9776;</button>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="departments.html">Departments</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="news.html">News & Events</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+  <main>
+    <section class="hero">
+      <h2>Public Resources</h2>
+      <p>Helpful documents, forms, and quick links</p>
+    </section>
+
+    <section class="content two-column">
+      <aside class="sidebar">
+        <h3>Categories</h3>
+        <ul>
+          <li><a href="#documents">Documents & Forms</a></li>
+          <li><a href="#web-links">Useful Websites</a></li>
+          <li><a href="#policies">County Policies</a></li>
+        </ul>
+      </aside>
+
+      <div class="main-section">
+        <section id="documents">
+          <h3>Downloadable Documents</h3>
+          <ul>
+            <li><a href="#">Building Permit Application (PDF)</a></li>
+            <li><a href="#">Public Meeting Schedule (PDF)</a></li>
+            <li><a href="#">Emergency Preparedness Guide (PDF)</a></li>
+          </ul>
+        </section>
+
+        <section id="web-links">
+          <h3>Useful Government Links</h3>
+          <ul>
+            <li><a href="https://www.ncdot.gov" target="_blank">North Carolina DOT</a></li>
+            <li><a href="https://www.ncdhhs.gov" target="_blank">NC Health & Human Services</a></li>
+            <li><a href="https://www.fema.gov" target="_blank">FEMA</a></li>
+          </ul>
+        </section>
+
+        <section id="policies">
+          <h3>County Policy Documents</h3>
+          <ul>
+            <li><a href="#">Code of Ordinances</a></li>
+            <li><a href="#">Zoning & Land Use Policy</a></li>
+            <li><a href="#">Employee Handbook</a></li>
+          </ul>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Macon County, NC. All Rights Reserved. | Designed by EvaDesign</p>
+    <img src="images/evadesign-logo.png" alt="EvaDesign Logo" class="footer-logo" />
+  </footer>
+
+  <script>
+    document.querySelector('.nav-toggle').addEventListener('click', () => {
+      document.querySelector('.nav-links').classList.toggle('open');
+    });
+  </script>
+</body>
+</html>
